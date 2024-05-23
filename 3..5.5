@@ -1,0 +1,9 @@
+5. What would be the output/effect of the following statements ?
+a) latch = 4’d12; $display(“The current value of latch = %b\n”, latch); 
+b) in_reg=3’d2; $monitor($time, “ In register value = %b\n”, in_reg[2:0]);
+c) `define MEM_SIZE 1024 $display(“ The maximum memory size is %h”, `MEM_SIZE); 
+answer: a) The current value of latch =4’b1100 
+b) 0 In register value = 3’b010 
+c) The maximum memory size is ‘h400
+Explanation:
+This output is based on the value defined for MEM_SIZE in the code, which is 1024. However, the %h format specifier in the $display statement interprets the value as hexadecimal. So, 1024 in hexadecimal is 400.
