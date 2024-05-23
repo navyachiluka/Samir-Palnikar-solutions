@@ -1,0 +1,29 @@
+. Are these legal identifiers ?
+a) system1 
+b) 1reg 
+c) $latch 
+d) exec$
+answer
+a) right 
+b.not valid because ,identifiers should not start with numericals
+c. invalid,identifiers should not contain any special characters except underscore
+d.not valid
+4. Declare the following variables in Verilog:
+a) An 8-bit vector net called a_in.
+b) A 32-bit storage register called address. Bit 31 must be the most significant bit. Set the value of the register to a 32-bit decimal number equal to 3.
+c) An integer called cout.
+d) A time variable called snap_shot.
+e) An array called delays. Array contains 20 elements of the type integer.
+f) A memory MEM containing 256 words of 64 bits each.
+g) A parameter cache_size equal to 512.
+answers: 
+a) wire [7:0] a_in;
+b) reg [31:0] address=32’d3;
+c) integer cout; 
+d) time snap_shot; 
+e) integer delays [0:19]; 
+f) reg [63:0] MEM [0:255]; 
+g) parameter cache_size=512;
+
+
+
