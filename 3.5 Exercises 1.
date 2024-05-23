@@ -1,0 +1,10 @@
+3.5 Exercises 1. Practice writing the following numbers: 
+a) Decimal number 123 as a sized 8-bit number in binary. Use _ for readability. 
+b) A 16-bit hexadecimal unknown number with all x’s. 
+c) A 4-bit negative 2 in decimal. Write the 2’s complement form for this number. 
+d) An unsized hex number 1234
+Answers:
+a.8'0111_1011,convert the decimal 123 into binary form and represent it in the binary form
+b.16'hx,it represents the unknown values of 16 bits with all x's.
+c.32'h1234,unsized ccan be taken with the size of 32
+or 'h1234
