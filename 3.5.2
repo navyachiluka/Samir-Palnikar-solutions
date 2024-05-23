@@ -1,0 +1,23 @@
+2. Are the following legal strings? If not, write the correct strings. 
+a) “This is a string displaying the % sign”
+b) “out=in1+in2”
+c) “Please ring a bell \007”
+d) “This is a backslash \ character\n”
+
+
+answers: a) “This is a string displaying the %% sign”
+reason:
+
+
+In Verilog, if you want to include special characters like % in a string, you should be cautious because % is also a special character used for formatting in Verilog. To include a % in your string, you need to escape it by using another % before it.
+b) right
+c) right
+d) “This is a backslash \\ character” 
+reason:
+
+In Verilog, the backslash \ character is used as an escape character to denote special sequences within strings. When you write \n in Verilog, it represents a newline character.
+
+So, if you want to represent the string "This is a backslash \ character" in Verilog, you need to escape the backslash character, otherwise, Verilog will interpret \ as an escape sequence.
+
+
+
