@@ -1,0 +1,4 @@
+
+Does a module that does not intract with its environment have any I/0 ports ?Does it have a port list in the module definition?
+A:Yes.A module can be there if any of the I/O port is not externally connected.It cannot be in the port list.
+Eg:Dff(clk,rst,A,Abar) this is the port declaration of "Dff" module.While instantiating it if we don't want to connect any other port externally we can just do not mention in the port list.Say,we don't want to include "Abar" while instantiating we can just skip the "Abar",then the declaration follows as Dff g1(clk,rst,A,).
